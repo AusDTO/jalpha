@@ -1,5 +1,7 @@
 # Jalpha
 
+[![CircleCI](https://circleci.com/gh/AusDTO/jalpha.svg?style=svg)](https://circleci.com/gh/AusDTO/jalpha)
+
 Jalpha generates a new Jekyll project packed with everything you should need to get started on your examplar's Alpha. This allows you to concentrate on your project from day one.
 
 ## What do you get
