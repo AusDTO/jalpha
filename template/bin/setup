@@ -7,9 +7,14 @@
 set -e
 
 # Set up Ruby dependencies via Bundler.
-gem install bundler --conservative
-bundle check || bundle install
-bundle update
+# If running on CircleCI, ensure gems are cached by using vendor folder.
+if [ -z "$CIRCLECI" ]; then
+  gem install bundler --conservative
+  bundle check || bundle install
+  bundle update
+else
+  bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 
+fi
 
 # Set up JS dependencies via Bower.
 bower --version > /dev/null || npm install -g bower
