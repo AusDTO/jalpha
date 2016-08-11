@@ -21,6 +21,8 @@
 
   <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
 
+  <link rel="stylesheet" type="text/css" href="https://gov-au-ui-kit.apps.staging.digital.gov.au/latest/ui-kit.min.css"/>
+
   {% stylesheet application %}
 </head>
 <body>
@@ -30,9 +32,13 @@
       to improve your experience.</p>
   <![endif]-->
 
+  {% include header.html %}
+
   <main role="main">
     {{ content }}
   </main>
+
+  {% include footer.html %}
 
   {% javascript vendor %}
   {% javascript application %}

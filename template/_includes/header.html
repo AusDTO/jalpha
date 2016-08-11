@@ -1,0 +1,25 @@
+<header role="banner">
+  {% if loggedin == "true" %}
+    <section class="controls">
+      <div class="wrapper">
+        <a href="#" class="login">Logout</a>
+      </div>
+    </section>
+  {% endif %}
+  <section class="govau--header">
+    <div class="wrapper">
+      <div class="govau--logo">
+        <a href="#" class="logo">gov.au</a> <span class="badge--default">prototype</span>
+      </div>
+      <div class="feedback">
+        <a href="#" class="button--feedback">Give feedback</a>
+      </div>
+    </div>
+  </section>
+  <section class="hero">
+    <div class="wrapper">
+      <a href="#" class="site-title">{{ page.agency }}</a>
+      <p class="tagline">{{ page.agencySub }}</p>
+    </div>
+  </section>
+</header>
