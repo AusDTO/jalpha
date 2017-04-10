@@ -5,10 +5,10 @@ Gem::Specification.new do |spec|
   spec.name          = "jalpha"
   spec.version       = Jalpha::VERSION
   spec.platform      = Gem::Platform::RUBY
-  spec.author        = "Mick Pollard"
+  spec.author        = "Digital Transformation Agency"
   spec.summary       = "Opinionated Jekyll project generator."
   spec.description   = "Jalpha scaffolds new Jekyll projects complete with everything needed for continual deployment to a cloud foundry platform."
-  spec.email         = "mick.pollard@digital.gov.au"
+  spec.email         = "weboperations@digital.gov.au"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split("\n")
