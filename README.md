@@ -31,6 +31,14 @@ Setup your environment:
 
     bin/setup
 
+## Releasing
+
+Commit your changes and change the version in [version.rb](https://github.com/AusDTO/jalpha/blob/master/lib/jalpha/version.rb)
+
+Push the new release to rubygems:
+
+    bundle exec rake release
+
 ## Bugs
 
 If you have found a bug please report it in [GitHub issues](https://github.com/AusDTO/jalpha/issues).
