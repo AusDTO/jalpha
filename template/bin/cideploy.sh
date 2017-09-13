@@ -32,11 +32,11 @@ main() {
   esac
 
   basicauth
-  cf api $CF_API
-  cf auth $CF_USER $CF_PASSWORD
-  cf target -o $CF_ORG
-  cf target -s $CF_SPACE
-  cf push $appname
+  cf api "$CF_API"
+  cf auth "$CF_USER" "$CF_PASSWORD"
+  cf target -o "$CF_ORG"
+  cf target -s "$CF_SPACE"
+  cf push "$appname"
 }
 
 main $@
